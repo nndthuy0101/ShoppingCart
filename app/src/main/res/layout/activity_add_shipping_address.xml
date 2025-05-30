@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:fillViewport="true"
+    android:paddingLeft="24dp"
+    android:paddingRight="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Back and Title -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp">
+
+            <ImageView
+                android:id="@+id/ivBack"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@mipmap/ic_back" />
+
+            <TextView
+                android:id="@+id/title_checkout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/title_add_shipping_address"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:gravity="center_horizontal" />
+        </LinearLayout>
+
+        <!-- Form content -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="24dp">
+
+            <!-- Name -->
+            <EditText
+                android:id="@+id/edtName"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="56dp"
+                android:background="@drawable/input_field_bg"
+                android:hint="@string/hint_name"
+                android:paddingStart="16dp"
+                android:textColorHint="#AFAFAF"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <!-- Address -->
+            <EditText
+                android:id="@+id/edtAddress"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:hint="@string/hint_address"
+                android:background="@drawable/input_field_bg"
+                android:paddingStart="16dp"
+                android:textColorHint="#AFAFAF"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@id/edtName"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <!-- City -->
+            <EditText
+                android:id="@+id/edtCity"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:hint="@string/hint_city"
+                android:background="@drawable/input_field_bg"
+                android:paddingStart="16dp"
+                android:textColorHint="#AFAFAF"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@id/edtAddress"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <!-- District -->
+            <EditText
+                android:id="@+id/edtDistrict"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:hint="@string/hint_district"
+                android:background="@drawable/input_field_bg"
+                android:paddingStart="16dp"
+                android:textColorHint="#AFAFAF"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@id/edtCity"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <!-- Ward -->
+            <EditText
+                android:id="@+id/edtWard"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:hint="@string/hint_ward"
+                android:background="@drawable/input_field_bg"
+                android:paddingStart="16dp"
+                android:textColorHint="#AFAFAF"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@id/edtDistrict"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <!-- Phone -->
+            <EditText
+                android:id="@+id/edtPhone"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:hint="@string/hint_phone"
+                android:background="@drawable/input_field_bg"
+                android:paddingStart="16dp"
+                android:textColorHint="#AFAFAF"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@id/edtWard"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <!-- Add Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnAddNew"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_marginTop="88dp"
+                android:text="@string/btn_add_address"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                app:backgroundTint="#89784B"
+                app:cornerRadius="100dp"
+                app:layout_constraintTop_toBottomOf="@id/edtPhone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+</ScrollView>

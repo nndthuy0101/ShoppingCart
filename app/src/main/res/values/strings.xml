@@ -1,0 +1,115 @@
+<resources>
+    <string name="app_name">ShoppingCart</string>
+    <string name="title_add_shipping_address">Add shipping address</string>
+    <string name="hint_name">Name</string>
+    <string name="hint_address">Address</string>
+    <string name="hint_city">City</string>
+    <string name="hint_district">District</string>
+    <string name="hint_ward">Ward</string>
+    <string name="hint_phone">Phone number</string>
+    <string name="btn_add_address">Add new address</string>
+    <string name="close">Close</string>
+    <string name="payment_success">PAYMENT SUCCESS</string>
+    <string name="payment_success_message">Your payment was success</string>
+    <string name="order_id_sample">Order ID    15263541</string>
+    <string name="rate_prompt">Rate your purchase</string>
+    <string name="submit">Submit</string>
+    <string name="back_home">Back to Shop</string>
+    <string name="order_id_label">Order ID:</string>
+    <string name="payment_method">Payment method</string>
+    <string name="hint_name_on_card">Name On Card</string>
+    <string name="hint_card_number">Card Number</string>
+    <string name="hint_exp_month">Exp Month</string>
+    <string name="hint_exp_year">Exp Year</string>
+    <string name="hint_cvv">CVV</string>
+    <string name="btn_add_card">Add card</string>
+
+
+    <string-array name="shipping_methods">
+        <item>Pickup at store</item>
+        <item>Standard Delivery</item>
+        <item>Express Delivery</item>
+    </string-array>
+
+    <string-array name="payment_methods">
+        <item>Cash</item>
+        <item>Credit Card</item>
+        <item>ZaloPay</item>
+    </string-array>
+
+    <string name="success">Success Icon</string>
+    <string name="reserved_successfully">RESERVED SUCCESSFULLY</string>
+    <string name="reservation_updated">Your reservation is updated!</string>
+
+    <!-- Appointment Info Labels -->
+    <string name="appointment_id_label">Appointment ID:</string>
+    <string name="appointment_date_label">Appointment Day:</string>
+    <string name="appointment_time_label">Appointment Time:</string>
+
+    <string name="remind_me">Remind me</string>
+
+    <string name="hint_search">Search product</string>
+    <string name="desc_filter">Filter options</string>
+    <string name="label_searched_recently">Searched Recently</string>
+    <string name="label_popular">Popular</string>
+    <string name="no_results_title">No Results Found</string>
+    <string name="no_results_description">It seems you entered incorrect product information. Please try again!</string>
+
+    <string name="title_my_cart">My Cart</string>
+    <string name="hint_promo_code">Promo Code</string>
+    <string name="btn_apply">Apply</string>
+    <string name="payment_summary">Payment Summary</string>
+    <string name="label_subtotal">Sub-Total</string>
+    <string name="label_delivery_fee">Delivery Fee</string>
+    <string name="label_discount">Discount</string>
+    <string name="label_total_cost">Total Cost</string>
+    <string name="btn_checkout">Proceed to Checkout</string>
+    <string name="label_total">TOTAL</string>
+    <string name="title_checkout">Checkout</string>
+
+    <string name="product_name">Product Name</string>
+    <string name="title_notification">Notification</string>
+
+    <string name="no_notification">No notification!</string>
+    <string name="go_to_store">Go to store</string>
+
+    <string name="rebound_branches">Rebound Branches</string>
+    <string name="hanoi">Hanoi</string>
+    <string name="ho_chi_minh">Ho Chi Minh</string>
+    <string name="branch1_title">Rebound Cao Ba Quat</string>
+    <string name="branch2_title">Rebound Tam Khuong</string>
+    <string name="branch1_address">34A Cao Ba Quat, Ba Dinh District</string>
+    <string name="branch2_address">77 Tam Khuong, Dong Da District</string>
+    <string name="branch_hours">09:30 - 21:30</string>
+
+    <string name="select_service">Select a service</string>
+    <string name="service1_title">First Piercing Experience</string>
+    <string name="service1_description">1–2 piercings\nPrice excluding jewellery</string>
+    <string name="service1_price">200.000 VND</string>
+    <string name="service1_duration">40 minutes</string>
+    <string name="selected">SELECTED</string>
+
+    <string name="select_appointment_time">Select your appointment time</string>
+    <string name="month_display">June 2025</string>
+    <string name="time_label">Time</string>
+    <string name="default_time">8:00 AM</string>
+    <string name="book_appointment">Book Appointment</string>
+
+
+    <string name="service2_title">The Quick And Simple Piercing Experience</string>
+    <string name="service2_description">Price excluding jewellery</string>
+    <string name="service2_price">200.000 VND</string>
+    <string name="service2_duration">30 minutes</string>
+
+    <string name="service3_title">The Extra Piercing Experience - 3-4 piercings</string>
+    <string name="service3_description">Price excluding jewellery</string>
+    <string name="service3_price">200.000 VND</string>
+    <string name="service3_duration">1 hour</string>
+
+    <string name="service4_title">Piercing Consulting\nStyling</string>
+    <string name="service4_price">Free service</string>
+    <string name="service4_duration">15 minutes</string>
+    <string name="service4_description">After Care Service</string>
+
+
+</resources>
