@@ -5,14 +5,14 @@ public class NewsDetailItem {
     private String title;
     private String description;
     private String date;
-    private String imageUrl;
+    private int image;
 
     // Constructor
-    public NewsDetailItem(String title, String description, String date, String imageUrl) {
+    public NewsDetailItem(String title, String description, String date, int image) {
         this.title = title;
         this.description = description;
         this.date = date;
-        this.imageUrl = imageUrl;
+        this.image = image;
     }
 
     // Getter
@@ -28,8 +28,8 @@ public class NewsDetailItem {
         return date;
     }
 
-    public String getImageUrl() {
-        return imageUrl;
+    public int getImage() {
+        return image;
     }
 }
 

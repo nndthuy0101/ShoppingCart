@@ -8,7 +8,7 @@
         android:topLeftRadius="24dp"
         android:topRightRadius="24dp"
         android:bottomLeftRadius="0dp"
-        android:elevation="20dp"
+        android:elevation="30dp"
         android:bottomRightRadius="0dp" />
 
 </shape>

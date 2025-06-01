@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:layout_margin="4dp"
+    android:gravity="start"> <!-- Chỉnh lại từ 'center' -->
+
+    <FrameLayout
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/img_stroke">
+
+        <ImageView
+            android:id="@+id/productImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="6dp"
+            android:scaleType="fitCenter" />
+    </FrameLayout>
+
+    <!-- Title and Rating on the same row -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="4dp">
+
+        <TextView
+            android:id="@+id/productTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tote Earrings"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginEnd="8dp" />
+
+        <ImageView
+            android:layout_marginStart="10dp"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:src="@mipmap/ic_star"
+            android:layout_marginEnd="4dp" />
+
+        <TextView
+            android:id="@+id/productRating"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4.3"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <!-- Giá sản phẩm nằm ngay dưới, canh trái -->
+    <TextView
+        android:id="@+id/productPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="150.000 VND"
+        android:textColor="#978C5C"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+</LinearLayout>

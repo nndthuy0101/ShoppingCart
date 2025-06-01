@@ -4,9 +4,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
-    android:paddingLeft="20dp"
-    android:paddingRight="20dp">
+    android:background="#FFFFFF">
 
     <!-- Back and Title on the same row -->
     <LinearLayout
@@ -14,7 +12,9 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center_vertical"
-        android:layout_marginTop="20dp">
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+        android:paddingRight="20dp">
 
         <ImageView
             android:id="@+id/ivBack"
@@ -40,15 +40,15 @@
         android:orientation="horizontal"
         android:gravity="center_vertical"
         android:layout_marginTop="16dp"
-        android:layout_marginBottom="12dp">
+        android:layout_marginBottom="12dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
 
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:orientation="vertical"
-            android:paddingLeft="20dp"
-            android:paddingRight="20dp">
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/txt_user_name"
@@ -119,46 +119,55 @@
         android:layout_marginTop="12dp"
         android:layout_marginBottom="12dp" />
 
-    <!-- Total summary -->
+
     <LinearLayout
+        android:id="@+id/summaryCard"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center_vertical"
-        android:layout_marginBottom="8dp"
-        android:paddingLeft="20dp"
-        android:paddingRight="20dp">
+        android:background="@drawable/rounded_top_white"
+        android:clipToOutline="true"
+        android:elevation="30dp"
+        android:orientation="vertical"
+        android:padding="16dp">
+        <!-- Total summary -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="8dp">
 
-        <TextView
-            android:text="@string/label_total"
-            android:letterSpacing="0.2"
-            android:textColor="#837841"
-            android:textSize="14sp"
-            android:layout_weight="1"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:letterSpacing="0.2"
+                android:text="@string/title_label_total"
+                android:textColor="#837841"
+                android:textSize="14sp"/>
 
-        <TextView
-            android:id="@+id/txt_total_checkout"
-            android:textStyle="bold"
-            android:textColor="#B12704"
+            <TextView
+                android:id="@+id/txt_total_checkout"
+                android:textStyle="bold"
+                android:textColor="#DD8560"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <!-- Checkout button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_checkout_action"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginBottom="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="@string/btn_checkout_shipping"
+            android:textColor="#FFFFFF"
             android:textSize="15sp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:textStyle="bold"
+            app:backgroundTint="#867B4A"
+            app:cornerRadius="100dp" />
     </LinearLayout>
-
-    <!-- Checkout button -->
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/btn_checkout_action"
-        android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:layout_marginBottom="20dp"
-        android:paddingLeft="20dp"
-        android:paddingRight="20dp"
-        android:text="@string/title_checkout"
-        android:textColor="#FFFFFF"
-        android:textSize="15sp"
-        android:textStyle="bold"
-        app:backgroundTint="#867B4A"
-        app:cornerRadius="100dp" />
 </LinearLayout>

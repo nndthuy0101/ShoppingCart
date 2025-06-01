@@ -10,10 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:paddingTop="15dp"
-        android:paddingBottom="15dp"
-        android:paddingRight="20dp"
-        android:paddingLeft="20dp">
+        android:padding="20dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -60,7 +57,7 @@
             android:id="@+id/tvBranchTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/rebound_branches"
+            android:text="@string/title_rebound_branches"
             android:textSize="14sp"
             android:textStyle="bold"
             android:textColor="#000000" />
@@ -76,22 +73,24 @@
                 android:id="@+id/btnHanoi"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/hanoi"
+                android:text="@string/btn_hanoi"
+                android:textStyle="bold"
                 app:cornerRadius="5dp"
                 android:backgroundTint="#F2F0D4"
-                android:textColor="#000000" />
+                android:textColor="#FFFFFF" />
 
             <Button
                 android:id="@+id/btnHCM"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/ho_chi_minh"
+                android:text="@string/btn_ho_chi_minh"
+                android:textStyle="bold"
                 android:layout_marginStart="8dp"
-                app:strokeColor="#AB9E67"
+                app:strokeColor="#22000000"
                 app:strokeWidth="0.5dp"
                 app:cornerRadius="5dp"
                 android:backgroundTint="#FFFFFF"
-                android:textColor="#000000" />
+                android:textColor="#22000000" />
         </LinearLayout>
 
         <!-- Branch images -->
@@ -133,7 +132,66 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/branch1_title"
+                    android:text="@string/title_branch1"
+                    android:textColor="#AB9E67"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="4dp">
+
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:src="@mipmap/ic_address_schedule"
+                        android:layout_marginEnd="6dp" />
+
+                    <TextView
+                        android:id="@+id/txtAddress1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/title_branch1_address"
+                        android:textSize="10sp"
+                        android:textColor="#000000" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="4dp">
+
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:src="@mipmap/ic_clock"
+                        android:layout_marginEnd="6dp" />
+
+                    <TextView
+                        android:id="@+id/txtTime1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/title_branch_hours"
+                        android:textSize="10sp"
+                        android:textColor="#000000" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_branch2"
                     android:textStyle="bold"
                     android:textSize="14sp"
                     android:textColor="#AB9E67" />
@@ -152,10 +210,10 @@
                         android:layout_marginEnd="6dp" />
 
                     <TextView
-                        android:id="@+id/tvAddress1"
+                        android:id="@+id/txtAddress2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/branch1_address"
+                        android:text="@string/title_branch2_address"
                         android:textSize="10sp"
                         android:textColor="#000000" />
                 </LinearLayout>
@@ -174,69 +232,10 @@
                         android:layout_marginEnd="6dp" />
 
                     <TextView
-                        android:id="@+id/tvTime1"
+                        android:id="@+id/txtTime2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/branch_hours"
-                        android:textSize="10sp"
-                        android:textColor="#000000" />
-                </LinearLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/branch2_title"
-                    android:textStyle="bold"
-                    android:textSize="16sp"
-                    android:textColor="#AB9E67" />
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:gravity="center_vertical"
-                    android:layout_marginTop="4dp">
-
-                    <ImageView
-                        android:layout_width="18dp"
-                        android:layout_height="18dp"
-                        android:src="@mipmap/ic_address_schedule"
-                        android:layout_marginEnd="6dp" />
-
-                    <TextView
-                        android:id="@+id/tvAddress2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/branch1_address"
-                        android:textSize="10sp"
-                        android:textColor="#000000" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:gravity="center_vertical"
-                    android:layout_marginTop="4dp">
-
-                    <ImageView
-                        android:layout_width="18dp"
-                        android:layout_height="18dp"
-                        android:src="@mipmap/ic_clock"
-                        android:layout_marginEnd="6dp" />
-
-                    <TextView
-                        android:id="@+id/tvTime2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/branch_hours"
+                        android:text="@string/title_branch_hours"
                         android:textSize="10sp"
                         android:textColor="#000000" />
                 </LinearLayout>
@@ -247,7 +246,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/select_service"
+            android:text="@string/title_select_service"
             android:textStyle="bold"
             android:textSize="14sp"
             android:layout_marginTop="10dp"
@@ -271,14 +270,14 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/service1_title"
+                    android:text="@string/title_service1"
                     android:textSize="12sp"
                     android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/service1_description"
+                    android:text="@string/title_service1_description"
                     android:textSize="12sp"
                     android:textColor="#555555" />
             </LinearLayout>
@@ -297,14 +296,14 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/service1_price"
+                    android:text="@string/title_service1_price"
                     android:textStyle="bold"
                     android:textSize="10sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/service1_duration"
+                    android:text="@string/title_service1_duration"
                     android:textSize="10sp" />
             </LinearLayout>
 
@@ -317,9 +316,9 @@
                 app:cornerRadius="0dp"
                 android:padding="1dp"
                 android:backgroundTint="#FFFFFF"
-                android:text="@string/selected"
+                android:text="@string/btn_selected"
                 app:strokeColor="#CCCCCC"
-                android:textColor="#000000" />
+                android:textColor="#000000"/>
         </LinearLayout>
 
         <!-- Horizontal Divider -->
@@ -345,14 +344,14 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/service2_title"
+                    android:text="@string/title_service2"
                     android:textSize="12sp"
                     android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/service2_description"
+                    android:text="@string/title_service2_description"
                     android:textSize="12sp"
                     android:textColor="#555555" />
             </LinearLayout>
@@ -372,14 +371,14 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/service2_price"
+                    android:text="@string/title_service2_price"
                     android:textStyle="bold"
                     android:textSize="10sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/service2_duration"
+                    android:text="@string/title_service2_duration"
                     android:textSize="10sp" />
             </LinearLayout>
 
@@ -392,7 +391,7 @@
                 app:cornerRadius="0dp"
                 android:padding="1dp"
                 android:backgroundTint="#FFFFFF"
-                android:text="@string/selected"
+                android:text="@string/btn_selected"
                 app:strokeColor="#CCCCCC"
                 android:textColor="#000000" />
         </LinearLayout>
@@ -421,14 +420,14 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/service3_title"
+                    android:text="@string/title_service3"
                     android:textSize="12sp"
                     android:textColor="#000000" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/service3_description"
+                    android:text="@string/title_service3_description"
                     android:textSize="12sp"
                     android:textColor="#555555" />
             </LinearLayout>
@@ -448,14 +447,14 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/service3_price"
+                    android:text="@string/title_service3_price"
                     android:textStyle="bold"
                     android:textSize="10sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/service3_duration"
+                    android:text="@string/title_service3_duration"
                     android:textSize="10sp" />
             </LinearLayout>
 
@@ -468,7 +467,7 @@
                 app:cornerRadius="0dp"
                 android:padding="1dp"
                 android:backgroundTint="#FFFFFF"
-                android:text="@string/selected"
+                android:text="@string/btn_selected"
                 app:strokeColor="#CCCCCC"
                 android:textColor="#000000" />
         </LinearLayout>
@@ -495,13 +494,13 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/service4_title"
+                    android:text="@string/title_service4"
                     android:textSize="12sp"
                     android:textColor="#000000" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/service4_description"
+                    android:text="@string/title_service4_description"
                     android:textSize="12sp"
                     android:textColor="#555555" />
             </LinearLayout>
@@ -521,14 +520,14 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/service4_price"
+                    android:text="@string/title_service4_price"
                     android:textSize="10sp"
                     android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/service4_duration"
+                    android:text="@string/title_service4_duration"
                     android:textSize="10sp" />
             </LinearLayout>
 
@@ -541,7 +540,7 @@
                 app:cornerRadius="0dp"
                 android:padding="1dp"
                 android:backgroundTint="#FFFFFF"
-                android:text="@string/selected"
+                android:text="@string/btn_selected"
                 app:strokeColor="#CCCCCC"
                 android:textColor="#000000" />
         </LinearLayout>
@@ -555,7 +554,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/select_appointment_time"
+            android:text="@string/title_select_appointment_time"
             android:textStyle="bold"
             android:textSize="14sp"
             android:layout_marginTop="10dp"
@@ -602,7 +601,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/time_label"
+                    android:text="@string/title_time_label"
                     android:textSize="16sp"
                     android:textColor="#000000" />
 
@@ -612,7 +611,7 @@
                     android:id="@+id/tvSelectedTime"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/default_time"
+                    android:text="@string/title_default_time"
                     android:textSize="17sp"
                     app:cornerRadius="6dp"
                     android:textColor="#000000" />
@@ -621,7 +620,6 @@
 
 
         <!-- Book Button -->
-
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnBook"
 
@@ -632,7 +630,7 @@
             android:backgroundTint="@color/white"
             android:paddingLeft="20dp"
             android:paddingRight="20dp"
-            android:text="@string/book_appointment"
+            android:text="@string/title_book_appointment"
             android:textColor="#000000"
             android:textSize="16sp"
             android:textStyle="bold"

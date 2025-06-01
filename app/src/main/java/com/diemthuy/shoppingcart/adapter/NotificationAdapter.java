@@ -47,9 +47,9 @@ public class NotificationAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
         if (holder instanceof HeaderViewHolder) {
             ((HeaderViewHolder) holder).headerTextView.setText(item.getTitle());
         } else if (holder instanceof NotificationViewHolder) {
-            ((NotificationViewHolder) holder).titleTextView.setText(item.getTitle());
-            ((NotificationViewHolder) holder).messageTextView.setText(item.getMessage());
-            ((NotificationViewHolder) holder).timeTextView.setText(item.getTime());
+            ((NotificationViewHolder) holder).txtNotification.setText(item.getTitle());
+            ((NotificationViewHolder) holder).txtMessageNotification.setText(item.getMessage());
+            ((NotificationViewHolder) holder).txtTimeNotification.setText(item.getTime());
         }
     }
 
@@ -63,13 +63,13 @@ public class NotificationAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
     }
 
     static class NotificationViewHolder extends RecyclerView.ViewHolder {
-        TextView titleTextView, messageTextView, timeTextView;
+        TextView txtNotification, txtMessageNotification, txtTimeNotification;
 
         NotificationViewHolder(View itemView) {
             super(itemView);
-            titleTextView = itemView.findViewById(R.id.titleTextView);
-            messageTextView = itemView.findViewById(R.id.messageTextView);
-            timeTextView = itemView.findViewById(R.id.timeTextView);
+            txtNotification = itemView.findViewById(R.id.txtNotification);
+            txtMessageNotification = itemView.findViewById(R.id.txtMessageNotification);
+            txtTimeNotification = itemView.findViewById(R.id.txtTimeNotification);
         }
     }
 }

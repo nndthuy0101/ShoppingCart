@@ -15,16 +15,15 @@
         android:layout_height="24dp"
         android:layout_marginEnd="8dp"
         android:src="@mipmap/ic_close"
-        android:contentDescription="@string/close"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <!-- Title -->
     <TextView
-        android:id="@+id/tvSuccessTitle"
+        android:id="@+id/txtSuccessTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/reserved_successfully"
+        android:text="@string/title_reserved_successfully"
         android:textAllCaps="true"
         android:textStyle="bold"
         android:textColor="#1E1E1E"
@@ -38,37 +37,37 @@
 
     <!-- Check Icon -->
     <ImageView
-        android:id="@+id/ivCheck"
+        android:id="@+id/imgCheck"
         android:layout_width="72dp"
         android:layout_height="72dp"
         android:layout_marginTop="20dp"
         android:src="@mipmap/ic_payment_success"
         android:contentDescription="@string/success"
-        app:layout_constraintTop_toBottomOf="@id/tvSuccessTitle"
+        app:layout_constraintTop_toBottomOf="@id/txtSuccessTitle"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <!-- Message -->
     <TextView
-        android:id="@+id/tvSuccessMessage"
+        android:id="@+id/txtSuccessMessage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/reservation_updated"
+        android:text="@string/title_reservation_updated"
         android:textColor="#1E1E1E"
         android:textSize="18sp"
         android:layout_marginTop="16dp"
-        app:layout_constraintTop_toBottomOf="@id/ivCheck"
+        app:layout_constraintTop_toBottomOf="@id/imgCheck"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <!-- Divider Image -->
     <ImageView
-        android:id="@+id/ivLinePayment"
+        android:id="@+id/imgLinePayment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:src="@mipmap/line_payment"
-        app:layout_constraintTop_toBottomOf="@id/tvSuccessMessage"
+        app:layout_constraintTop_toBottomOf="@id/txtSuccessMessage"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -79,7 +78,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_marginTop="16dp"
-        app:layout_constraintTop_toBottomOf="@id/ivLinePayment"
+        app:layout_constraintTop_toBottomOf="@id/imgLinePayment"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
@@ -91,15 +90,15 @@
             android:gravity="center">
 
             <TextView
-                android:id="@+id/tvAppointmentIdLabel"
+                android:id="@+id/txtAppointmentIdLabel"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="@string/appointment_id_label"
+                android:text="@string/title_appointment_id_label"
                 android:textColor="#888888"
                 android:textSize="15sp" />
 
             <TextView
-                android:id="@+id/tvAppointmentIdValue"
+                android:id="@+id/txtAppointmentIdValue"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="03"
@@ -117,15 +116,15 @@
             android:layout_marginTop="8dp">
 
             <TextView
-                android:id="@+id/tvAppointmentDateLabel"
+                android:id="@+id/txtAppointmentDateLabel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/appointment_date_label"
+                android:text="@string/title_appointment_date_label"
                 android:textColor="#888888"
                 android:textSize="15sp" />
 
             <TextView
-                android:id="@+id/tvAppointmentDateValue"
+                android:id="@+id/txtAppointmentDateValue"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="26/07/2025"
@@ -143,15 +142,15 @@
             android:layout_marginTop="8dp">
 
             <TextView
-                android:id="@+id/tvAppointmentTimeLabel"
+                android:id="@+id/txtAppointmentTimeLabel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/appointment_time_label"
+                android:text="@string/title_appointment_time_label"
                 android:textColor="#888888"
                 android:textSize="15sp" />
 
             <TextView
-                android:id="@+id/tvAppointmentTimeValue"
+                android:id="@+id/txtAppointmentTimeValue"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="8:00 AM"
@@ -167,7 +166,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:text="@string/remind_me"
+        android:text="@string/btn_remind_me"
         android:textColor="#1E1E1E"
         android:textSize="18sp"
         app:backgroundTint="#FFFFFF"

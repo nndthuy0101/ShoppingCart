@@ -5,10 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:paddingTop="15dp"
-    android:paddingBottom="15dp"
-    android:paddingRight="20dp"
-    android:paddingLeft="20dp"
+   android:padding="20dp"
     android:background="#FFFFFF">
 
     <!-- Logo + Title -->
@@ -29,7 +26,7 @@
             android:gravity="center">
 
             <ImageView
-                android:id="@+id/logo"
+                android:id="@+id/imgLogo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@mipmap/ic_logo_small" />
@@ -38,10 +35,10 @@
         <!-- Icon phải -->
     </LinearLayout>
     <TextView
-        android:id="@+id/tvTitle"
+        android:id="@+id/txtTitleNewsMain"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="News"
+        android:text="@string/title_news_main"
         android:gravity="center"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -50,10 +47,10 @@
 
     <!-- Latest News Label -->
     <TextView
-        android:id="@+id/tvLatestNews"
+        android:id="@+id/txtLatestNews"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Latest News"
+        android:text="@string/title_latest_news"
         android:textStyle="bold"
         android:textSize="14sp"
         android:paddingStart="16dp"

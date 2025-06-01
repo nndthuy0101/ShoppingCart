@@ -5,8 +5,8 @@
     android:paddingVertical="12dp"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:paddingRight="20dp"
     android:paddingLeft="20dp"
+    android:paddingRight="20dp"
     android:background="#FFFFFF">
 
     <LinearLayout
@@ -80,7 +80,7 @@
             <TextView
                 android:id="@+id/item_price"
                 android:text="250.000"
-                android:textColor="#DD8560"
+                android:textColor="#AB9E67"
                 android:textSize="15sp"
                 android:layout_marginTop="8dp"
                 android:layout_width="wrap_content"

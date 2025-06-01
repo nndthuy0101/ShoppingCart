@@ -18,7 +18,7 @@ public class NewsActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main); // XML không có bottom bar
+        setContentView(R.layout.activity_news);
 
         rvNews = findViewById(R.id.rvNews);
         rvNews.setLayoutManager(new LinearLayoutManager(this));

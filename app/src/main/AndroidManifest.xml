@@ -13,6 +13,66 @@
         android:theme="@style/Theme.ShoppingCart"
         tools:targetApi="31">
         <activity
+            android:name=".EditProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CompleteProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PasswordChangedActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CreateNewPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OTPVerificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ForgotPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WelcomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CreateNewCardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CheckoutInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SearchNoResultActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SearchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ARCameraProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ARCameraCategoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NecklacesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EarringsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainPageActivity"
+            android:exported="false" />
+        <activity
             android:name=".NewsDetailActivity"
             android:exported="false" />
         <activity
