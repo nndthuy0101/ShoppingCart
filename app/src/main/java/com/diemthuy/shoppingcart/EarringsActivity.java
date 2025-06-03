@@ -40,7 +40,7 @@ public class EarringsActivity extends AppCompatActivity {
         List<ProductItem> earringList = ProductData.getEarringList();
 
         // Khởi tạo RecyclerView
-        RecyclerView earringsRecyclerView = findViewById(R.id.earringsRecyclerView);
+        RecyclerView earringsRecyclerView = findViewById(R.id.recyclerViewEarrings);
         earringsRecyclerView.setLayoutManager(new GridLayoutManager(this, 2));
         ProductAdapter adapter = new ProductAdapter(earringList);
         earringsRecyclerView.setAdapter(adapter);

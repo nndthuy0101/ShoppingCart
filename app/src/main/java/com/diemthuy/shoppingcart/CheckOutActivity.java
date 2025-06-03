@@ -24,12 +24,12 @@ public class CheckOutActivity extends AppCompatActivity {
 
         cartData = new CartData();
 
-        RecyclerView recyclerView = findViewById(R.id.recyclerView_checkout);
-        txtTotal = findViewById(R.id.txt_total_checkout);
-        txtName = findViewById(R.id.txt_user_name);
-        txtAddress = findViewById(R.id.txt_user_address);
-        txtPhone = findViewById(R.id.txt_user_phone);
-        txtCardInfo = findViewById(R.id.txt_user_card);
+        RecyclerView recyclerView = findViewById(R.id.recyclerViewCheckout);
+        txtTotal = findViewById(R.id.txtCheckoutTotal);
+        txtName = findViewById(R.id.txtCheckoutUsername);
+        txtAddress = findViewById(R.id.txtCheckoutAddress);
+        txtPhone = findViewById(R.id.txtCheckoutPhone);
+        txtCardInfo = findViewById(R.id.txtCheckoutCard);
 
         // Mock user info
         txtName.setText("Giang Bao Tran");
@@ -37,7 +37,7 @@ public class CheckOutActivity extends AppCompatActivity {
         txtPhone.setText("0101819898");
         txtCardInfo.setText("Master Card ending ••••89");
 
-        MaterialButton btnCheckout = findViewById(R.id.btn_checkout_action);
+        MaterialButton btnCheckout = findViewById(R.id.btnCheckout);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(new CartAdapter(cartData.getItems(), this::updateTotal));
 

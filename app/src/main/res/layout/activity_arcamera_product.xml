@@ -108,6 +108,7 @@
     </LinearLayout>
 
     <!-- Bottom area-->
+    <!-- Bottom area -->
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="160dp"
@@ -115,20 +116,21 @@
         android:background="#FFFFFF">
 
         <!-- RecyclerView product list -->
-
-        <!-- Filter/Close Button -->
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerViewProductAR"
             android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:paddingTop="40dp"
+            android:layout_height="match_parent"
             android:layout_gravity="center"
-            android:overScrollMode="never"
+            android:paddingTop="40dp"
+            android:paddingBottom="8dp"
             android:paddingStart="8dp"
-            android:paddingEnd="8dp" />
+            android:paddingEnd="8dp"
+            android:clipToPadding="false"
+            android:overScrollMode="never" />
 
+        <!-- Filter/Close Button -->
         <ImageView
-            android:id="@+id/btnloseAr"
+            android:id="@+id/btnFilterAR"
             android:layout_width="18dp"
             android:layout_height="24dp"
             android:layout_gravity="end|top"
@@ -136,6 +138,8 @@
             android:layout_marginEnd="12dp"
             android:src="@mipmap/ic_filter_ar" />
     </FrameLayout>
+
+
 
     <!-- Capture Button -->
     <ImageView

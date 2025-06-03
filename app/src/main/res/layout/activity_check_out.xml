@@ -23,7 +23,7 @@
             android:src="@mipmap/ic_back" />
 
         <TextView
-            android:id="@+id/title_checkout"
+            android:id="@+id/txtCheckout"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -51,27 +51,27 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/txt_user_name"
+                android:id="@+id/txtCheckoutUsername"
                 android:textStyle="bold"
                 android:textSize="16sp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
             <TextView
-                android:id="@+id/txt_user_address"
+                android:id="@+id/txtCheckoutAddress"
                 android:layout_width="match_parent"
                 android:textSize="14sp"
                 android:layout_height="wrap_content" />
 
             <TextView
-                android:id="@+id/txt_user_phone"
+                android:id="@+id/txtCheckoutPhone"
                 android:layout_width="match_parent"
                 android:textSize="14sp"
                 android:layout_height="wrap_content" />
         </LinearLayout>
 
         <ImageView
-            android:id="@+id/ivArrow"
+            android:id="@+id/imgArrow"
             android:layout_width="20dp"
             android:layout_height="20dp"
             android:layout_marginStart="8dp"
@@ -94,7 +94,7 @@
 
         <!-- Card info -->
         <TextView
-            android:id="@+id/txt_user_card"
+            android:id="@+id/txtCheckoutCard"
             android:drawableStart="@mipmap/ic_mastercard"
             android:drawablePadding="8dp"
             android:layout_width="match_parent"
@@ -112,7 +112,7 @@
 
     <!-- Product list -->
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerView_checkout"
+        android:id="@+id/recyclerViewCheckout"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
@@ -121,7 +121,7 @@
 
 
     <LinearLayout
-        android:id="@+id/summaryCard"
+        android:id="@+id/CheckoutSummaryCard"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/rounded_top_white"
@@ -142,12 +142,12 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:letterSpacing="0.2"
-                android:text="@string/title_label_total"
+                android:text="@string/title_checkout_total"
                 android:textColor="#837841"
                 android:textSize="14sp"/>
 
             <TextView
-                android:id="@+id/txt_total_checkout"
+                android:id="@+id/txtCheckoutTotal"
                 android:textStyle="bold"
                 android:textColor="#DD8560"
                 android:textSize="15sp"
@@ -157,13 +157,13 @@
 
         <!-- Checkout button -->
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/btn_checkout_action"
+            android:id="@+id/btnCheckout"
             android:layout_width="match_parent"
             android:layout_height="56dp"
             android:layout_marginBottom="20dp"
             android:paddingLeft="20dp"
             android:paddingRight="20dp"
-            android:text="@string/btn_checkout_shipping"
+            android:text="@string/title_button_checkout"
             android:textColor="#FFFFFF"
             android:textSize="15sp"
             android:textStyle="bold"

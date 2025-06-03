@@ -29,13 +29,13 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.ViewHolder> {
 
         public ViewHolder(View itemView) {
             super(itemView);
-            name = itemView.findViewById(R.id.item_name);
-            variant = itemView.findViewById(R.id.item_variant);
-            price = itemView.findViewById(R.id.item_price);
-            quantity = itemView.findViewById(R.id.item_quantity);
-            btnPlus = itemView.findViewById(R.id.btn_plus);
-            btnMinus = itemView.findViewById(R.id.btn_minus);
-            image = itemView.findViewById(R.id.item_image);
+            name = itemView.findViewById(R.id.txtProductName);
+            variant = itemView.findViewById(R.id.txtProductVariant);
+            price = itemView.findViewById(R.id.txtProductPrice);
+            quantity = itemView.findViewById(R.id.txtProductQuantity);
+            btnPlus = itemView.findViewById(R.id.btnPlus);
+            btnMinus = itemView.findViewById(R.id.btnMinus);
+            image = itemView.findViewById(R.id.imgProduct);
         }
     }
 

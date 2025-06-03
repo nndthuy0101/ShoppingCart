@@ -33,9 +33,9 @@ public class LastCollectionAdapter extends RecyclerView.Adapter<LastCollectionAd
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         LastCollectionItem item = itemList.get(position);
-        holder.imageView.setImageResource(item.getImageResId());
-        holder.titleView.setText(item.getTitle());
-        holder.priceView.setText(item.getPrice());
+        holder.imgLastCollection.setImageResource(item.getImageResId());
+        holder.txtLastCollectionName.setText(item.getTitle());
+        holder.txtLastCollectionPrice.setText(item.getPrice());
     }
 
     @Override
@@ -44,14 +44,14 @@ public class LastCollectionAdapter extends RecyclerView.Adapter<LastCollectionAd
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
-        ImageView imageView;
-        TextView titleView, priceView;
+        ImageView imgLastCollection;
+        TextView txtLastCollectionName, txtLastCollectionPrice;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            imageView = itemView.findViewById(R.id.item_image);
-            titleView = itemView.findViewById(R.id.item_title);
-            priceView = itemView.findViewById(R.id.item_price);
+            imgLastCollection = itemView.findViewById(R.id.imgLastCollection);
+            txtLastCollectionName = itemView.findViewById(R.id.txtLastCollectionName);
+            txtLastCollectionPrice = itemView.findViewById(R.id.txtLastCollectionPrice);
         }
     }
 }

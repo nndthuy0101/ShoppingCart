@@ -8,40 +8,39 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.LinearSnapHelper;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.recyclerview.widget.SnapHelper;
 
 import com.diemthuy.shoppingcart.adapter.ProductARAdapter;
 import com.diemthuy.shoppingcart.data.ProductData;
 import com.diemthuy.shoppingcart.models.ProductItem;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class ARCameraProductActivity extends AppCompatActivity {
 
     private RecyclerView recyclerViewProductAR;
-    private ProductARAdapter productARAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_arcamera_product);
 
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
-
-        setupProductList();
-    }
-
-    private void setupProductList() {
         recyclerViewProductAR = findViewById(R.id.recyclerViewProductAR);
-        recyclerViewProductAR.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
 
+        LinearLayoutManager layoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
+        recyclerViewProductAR.setLayoutManager(layoutManager);
+
+        SnapHelper snapHelper = new LinearSnapHelper();
+        snapHelper.attachToRecyclerView(recyclerViewProductAR);
+
+        // Lấy danh sách sản phẩm từ ProductData
         List<ProductItem> productList = ProductData.getEarringList();
-        productARAdapter = new ProductARAdapter(productList);
-        recyclerViewProductAR.setAdapter(productARAdapter);
+
+        // Truyền vào adapter
+        ProductARAdapter adapter = new ProductARAdapter(productList, this);
+        recyclerViewProductAR.setAdapter(adapter);
     }
 }

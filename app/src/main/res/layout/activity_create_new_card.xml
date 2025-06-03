@@ -4,6 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="20dp"
+    android:id="@+id/main"
     android:background="#FFFFFF">
 
     <!-- Header-->
@@ -21,7 +22,7 @@
             android:src="@mipmap/ic_back" />
 
         <TextView
-            android:id="@+id/txtCheckOut"
+            android:id="@+id/txtCreateNewCardTitle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -55,14 +56,12 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:clipToPadding="false"
-                    android:paddingStart="32dp"
-                    android:paddingEnd="32dp"
                     android:overScrollMode="never" />
             </FrameLayout>
 
             <!-- Dots indicator -->
             <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
-                android:id="@+id/dots_indicator"
+                android:id="@+id/dotsIndicator"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -75,7 +74,7 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/hint_name_on_card"
+                android:hint="@string/title_create_new_card_name_on_card_hint"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/input_field_bg"
                 android:padding="12dp" />
@@ -83,7 +82,7 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/hint_card_number"
+                android:hint="@string/title_create_new_card_card_number_hint"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/input_field_bg"
                 android:padding="12dp" />
@@ -99,7 +98,7 @@
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:layout_height="wrap_content"
-                    android:hint="@string/hint_exp_month"
+                    android:hint="@string/title_create_new_card_exp_month_hint"
                     android:background="@drawable/input_field_bg"
                     android:padding="12dp" />
 
@@ -108,7 +107,7 @@
                     android:layout_weight="1"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
-                    android:hint="@string/hint_exp_year"
+                    android:hint="@string/title_create_new_card_exp_year_hint"
                     android:background="@drawable/input_field_bg"
                     android:padding="12dp" />
             </LinearLayout>
@@ -116,17 +115,17 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/hint_cvv"
+                android:hint="@string/title_create_new_card_cvv_hint"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/input_field_bg"
                 android:padding="12dp" />
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/btnAddCard"
+                android:id="@+id/btnCreateNewCardAddCard"
                 android:layout_width="match_parent"
                 android:layout_height="56dp"
                 android:layout_marginTop="70dp"
-                android:text="@string/btn_add_card"
+                android:text="@string/title_button_create_new_card_add_card"
                 android:textColor="#FFFFFF"
                 android:textStyle="bold"
                 android:textSize="15sp"

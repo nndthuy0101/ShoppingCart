@@ -23,13 +23,13 @@
             >
 
             <ImageView
-                android:id="@+id/ivBack"
+                android:id="@+id/imgBack"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:src="@mipmap/ic_back" />
 
             <TextView
-                android:id="@+id/title_checkout"
+                android:id="@+id/txtAddShippingAddress"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -42,17 +42,16 @@
         <!-- Form content -->
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="24dp">
+            android:layout_height="wrap_content">
 
             <!-- Name -->
             <EditText
-                android:id="@+id/edtName"
+                android:id="@+id/edtAddShippingAddressName"
                 android:layout_width="0dp"
                 android:layout_height="48dp"
                 android:layout_marginTop="56dp"
                 android:background="@drawable/input_field_bg"
-                android:hint="@string/hint_name"
+                android:hint="@string/title_add_shipping_name_hint"
                 android:paddingStart="16dp"
                 android:textColorHint="#AFAFAF"
                 app:layout_constraintTop_toTopOf="parent"
@@ -61,87 +60,87 @@
 
             <!-- Address -->
             <EditText
-                android:id="@+id/edtAddress"
+                android:id="@+id/edtAddShippingAddress"
                 android:layout_width="0dp"
                 android:layout_height="48dp"
-                android:hint="@string/hint_address"
+                android:hint="@string/title_add_shipping_address_hint"
                 android:background="@drawable/input_field_bg"
                 android:paddingStart="16dp"
                 android:textColorHint="#AFAFAF"
                 android:layout_marginTop="16dp"
-                app:layout_constraintTop_toBottomOf="@id/edtName"
+                app:layout_constraintTop_toBottomOf="@id/edtAddShippingAddressName"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent" />
 
             <!-- City -->
             <EditText
-                android:id="@+id/edtCity"
+                android:id="@+id/edtAddShippingCity"
                 android:layout_width="0dp"
                 android:layout_height="48dp"
-                android:hint="@string/hint_city"
+                android:hint="@string/title_add_shipping_city_hint"
                 android:background="@drawable/input_field_bg"
                 android:paddingStart="16dp"
                 android:textColorHint="#AFAFAF"
                 android:layout_marginTop="16dp"
-                app:layout_constraintTop_toBottomOf="@id/edtAddress"
+                app:layout_constraintTop_toBottomOf="@id/edtAddShippingAddress"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent" />
 
             <!-- District -->
             <EditText
-                android:id="@+id/edtDistrict"
+                android:id="@+id/edtAddShippingDistrict"
                 android:layout_width="0dp"
                 android:layout_height="48dp"
-                android:hint="@string/hint_district"
+                android:hint="@string/title_add_shipping_district_hint"
                 android:background="@drawable/input_field_bg"
                 android:paddingStart="16dp"
                 android:textColorHint="#AFAFAF"
                 android:layout_marginTop="16dp"
-                app:layout_constraintTop_toBottomOf="@id/edtCity"
+                app:layout_constraintTop_toBottomOf="@id/edtAddShippingCity"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent" />
 
             <!-- Ward -->
             <EditText
-                android:id="@+id/edtWard"
+                android:id="@+id/edtAddShippingWard"
                 android:layout_width="0dp"
                 android:layout_height="48dp"
-                android:hint="@string/hint_ward"
+                android:hint="@string/title_add_shipping_ward_hint"
                 android:background="@drawable/input_field_bg"
                 android:paddingStart="16dp"
                 android:textColorHint="#AFAFAF"
                 android:layout_marginTop="16dp"
-                app:layout_constraintTop_toBottomOf="@id/edtDistrict"
+                app:layout_constraintTop_toBottomOf="@id/edtAddShippingDistrict"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent" />
 
             <!-- Phone -->
             <EditText
-                android:id="@+id/edtPhone"
+                android:id="@+id/edtAddShippingPhone"
                 android:layout_width="0dp"
                 android:layout_height="48dp"
-                android:hint="@string/hint_phone"
+                android:hint="@string/title_add_shipping_phone_number_hint"
                 android:background="@drawable/input_field_bg"
                 android:paddingStart="16dp"
                 android:textColorHint="#AFAFAF"
                 android:layout_marginTop="16dp"
-                app:layout_constraintTop_toBottomOf="@id/edtWard"
+                app:layout_constraintTop_toBottomOf="@id/edtAddShippingWard"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent" />
 
             <!-- Add Button -->
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/btnAddNew"
+                android:id="@+id/btnAddShippingAddress"
                 android:layout_width="0dp"
                 android:layout_height="56dp"
                 android:layout_marginTop="88dp"
-                android:text="@string/btn_add_address"
+                android:text="@string/title_button_add_shipping_address"
                 android:textColor="#FFFFFF"
                 android:textStyle="bold"
                 android:textSize="15sp"
                 app:backgroundTint="#89784B"
                 app:cornerRadius="100dp"
-                app:layout_constraintTop_toBottomOf="@id/edtPhone"
+                app:layout_constraintTop_toBottomOf="@id/edtAddShippingPhone"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent" />
 

@@ -1,26 +1,31 @@
 <resources>
     <string name="app_name">ShoppingCart</string>
+    <string name="title_checkout_info_add_shipping_address">Add shipping address</string>
+
     <string name="title_add_shipping_address">Add shipping address</string>
-    <string name="hint_name">Name</string>
-    <string name="hint_address">Address</string>
-    <string name="hint_city">City</string>
-    <string name="hint_district">District</string>
-    <string name="hint_ward">Ward</string>
-    <string name="hint_phone">Phone number</string>
-    <string name="btn_add_address">Add new address</string>
+    <string name="title_add_shipping_name_hint">Name</string>
+    <string name="title_add_shipping_address_hint">Address</string>
+    <string name="title_add_shipping_city_hint">City</string>
+    <string name="title_add_shipping_district_hint">District</string>
+    <string name="title_add_shipping_ward_hint">Ward</string>
+    <string name="title_add_shipping_phone_number_hint">Phone number</string>
+    <string name="title_button_add_shipping_address">Add new address</string>
+
     <string name="btn_close">Close</string>
-    <string name="title_payment_success">PAYMENT SUCCESS</string>
-    <string name="title_payment_success_message">Your payment was success</string>
-    <string name="title_order_id_sample">Order ID    15263541</string>
-    <string name="title_rate_prompt">Rate your purchase</string>
-    <string name="btn_back_shop">Back to Shop</string>
+    <string name="title_payment_successful">PAYMENT SUCCESS</string>
+    <string name="title_payment_successful_message">Your payment was success</string>
+    <string name="title_payment_successful_order_id">Order ID    15263541</string>
+    <string name="title_payment_successful_rate_prompt">Rate your purchase</string>
+    <string name="btn_payment_successful_back_shop">Back to Shop</string>
+
     <string name="title_order_id_label">Order ID:</string>
-    <string name="hint_name_on_card">Name On Card</string>
-    <string name="hint_card_number">Card Number</string>
-    <string name="hint_exp_month">Exp Month</string>
-    <string name="hint_exp_year">Exp Year</string>
-    <string name="hint_cvv">CVV</string>
-    <string name="btn_add_card">Add card</string>
+
+    <string name="title_create_new_card_name_on_card_hint">Name On Card</string>
+    <string name="title_create_new_card_card_number_hint">Card Number</string>
+    <string name="title_create_new_card_exp_month_hint">Exp Month</string>
+    <string name="title_create_new_card_exp_year_hint">Exp Year</string>
+    <string name="title_create_new_card_cvv_hint">CVV</string>
+    <string name="title_button_create_new_card_add_card">Add card</string>
 
 
     <string-array name="shipping_methods">
@@ -46,10 +51,11 @@
 
     <string name="btn_remind_me">Remind me</string>
 
-    <string name="hint_search">Search product</string>
-    <string name="btn_filter">Filter options</string>
+    <string name="title_search_hint">Search product</string>
+    <string name="title_button_search_filter">Filter options</string>
     <string name="title_searched_recently">Searched Recently</string>
-    <string name="title_popular">Popular</string>
+    <string name="title_search_popular">Popular</string>
+
     <string name="title_no_results">No Results Found</string>
     <string name="title_no_results_description">It seems you entered incorrect product information. Please try again!</string>
 
@@ -62,7 +68,7 @@
     <string name="title_label_discount">Discount</string>
     <string name="title_label_total_cost">Total Cost</string>
     <string name="btn_checkout">Proceed to Checkout</string>
-    <string name="title_label_total">TOTAL</string>
+
     <string name="title_checkout">Checkout</string>
 
     <string name="product_name">Product Name</string>
@@ -71,42 +77,43 @@
     <string name="title_no_notification">No notification!</string>
     <string name="btn_go_to_store">Go to store</string>
 
-    <string name="title_rebound_branches">Rebound Branches</string>
-    <string name="btn_hanoi">Hanoi</string>
-    <string name="btn_ho_chi_minh">Ho Chi Minh</string>
-    <string name="title_branch1">Rebound Cao Ba Quat</string>
-    <string name="title_branch2">Rebound Tam Khuong</string>
-    <string name="title_branch1_address">34A Cao Ba Quat, Ba Dinh District</string>
-    <string name="title_branch2_address">77 Tam Khuong, Dong Da District</string>
-    <string name="title_branch_hours">09:30 - 21:30</string>
+    <string name="title_schedule_rebound_branches">Rebound Branches</string>
+    <string name="title_button_schedule_hanoi">Hanoi</string>
+    <string name="title_button_schedule_ho_chi_minh">Ho Chi Minh</string>
+    <string name="title_schedule_branch1">Rebound Cao Ba Quat</string>
+    <string name="title_schedule_branch2">Rebound Tam Khuong</string>
+    <string name="title_schedule_branch1_address">34A Cao Ba Quat, Ba Dinh District</string>
+    <string name="title_schedule_branch2_address">77 Tam Khuong, Dong Da District</string>
+    <string name="title_schedule_branch_hours">09:30 - 21:30</string>
+    <string name="title_schedule_select_service">Select a service</string>
 
-    <string name="title_service1">First Piercing Experience</string>
-    <string name="title_service1_description">1–2 piercings\nPrice excluding jewellery</string>
-    <string name="title_service1_price">200.000 VND</string>
-    <string name="title_service1_duration">40 minutes</string>
-    <string name="btn_selected">SELECTED</string>
+    <string name="title_schedule_service1">First Piercing Experience</string>
+    <string name="title_schedule_service1_description">1–2 piercings\nPrice excluding jewellery</string>
+    <string name="title_schedule_service1_price">200.000 VND</string>
+    <string name="title_schedule_service1_duration">40 minutes</string>
+    <string name="title_button_schedule_selected">SELECTED</string>
 
-    <string name="title_select_appointment_time">Select your appointment time</string>
-    <string name="title_month_display">June 2025</string>
-    <string name="title_time_label">Time</string>
-    <string name="title_default_time">8:00 AM</string>
-    <string name="title_book_appointment">Book Appointment</string>
+    <string name="title_schedule_select_appointment_time">Select your appointment time</string>
+    <string name="title_schedule_month_display">June 2025</string>
+    <string name="title_schedule_time_label">Time</string>
+    <string name="title_schedule_default_time">8:00 AM</string>
+    <string name="title_schedule_book_appointment">Book Appointment</string>
 
 
-    <string name="title_service2">The Quick And Simple Piercing Experience</string>
-    <string name="title_service2_description">Price excluding jewellery</string>
-    <string name="title_service2_price">200.000 VND</string>
-    <string name="title_service2_duration">30 minutes</string>
+    <string name="title_schedule_service2">The Quick And Simple Piercing Experience</string>
+    <string name="title_schedule_service2_description">Price excluding jewellery</string>
+    <string name="title_schedule_service2_price">200.000 VND</string>
+    <string name="title_schedule_service2_duration">30 minutes</string>
 
-    <string name="title_service3">The Extra Piercing Experience - 3-4 piercings</string>
-    <string name="title_service3_description">Price excluding jewellery</string>
-    <string name="title_service3_price">200.000 VND</string>
-    <string name="title_service3_duration">1 hour</string>
+    <string name="title_schedule_service3">The Extra Piercing Experience - 3-4 piercings</string>
+    <string name="title_schedule_service3_description">Price excluding jewellery</string>
+    <string name="title_schedule_service3_price">200.000 VND</string>
+    <string name="title_schedule_service3_duration">1 hour</string>
 
-    <string name="title_service4">Piercing Consulting\nStyling</string>
-    <string name="title_service4_price">Free service</string>
-    <string name="title_service4_duration">15 minutes</string>
-    <string name="title_service4_description">After Care Service</string>
+    <string name="title_schedule_service4">Piercing Consulting\nStyling</string>
+    <string name="title_schedule_service4_price">Free service</string>
+    <string name="title_schedule_service4_duration">15 minutes</string>
+    <string name="title_schedule_service4_description">After Care Service</string>
 
     <string name="title_ar_rotation">Rotation</string>
     <string name="title_ar_add_to_cart">Add to Cart</string>
@@ -120,21 +127,16 @@
     <string name="title_news_main">News</string>
     <string name="title_latest_news">Latest News</string>">
 
-    <string name="title_product_categories">Product Categories</string>
-    <string name="title_select_service">Select a service</string>
-    <string name="title_select_appointment_date">Select your appointment time</string>
-
     <string name="btn_book_appointment">Book Appointment</string>"
 
-    <string name="title_piercing_placements">Piercing Placements</string>
-    <string name="title_latest_collection">Latest Collection</string>">
 
 
-    <string name="title_shipping_address">SHIPPING ADDRESS</string>
-    <string name="title_shipping_method">SHIPPING METHOD</string>
-    <string name="title_payment_method">PAYMENT METHOD</string>
-    <string name="title_total">TOTAL</string>
-    <string name="btn_checkout_shipping">Checkout</string>
+
+    <string name="title_checkout_info_shipping_address">SHIPPING ADDRESS</string>
+    <string name="title_checkout_info_shipping_method">SHIPPING METHOD</string>
+    <string name="title_checkout_info_payment_method">PAYMENT METHOD</string>
+    <string name="title_checkout_info_total">TOTAL</string>
+    <string name="title_button_checkout_info">Checkout</string>
 
     <string name="title_payment_method_card">Payment Method</string>
 
@@ -218,6 +220,20 @@
 
     <string name="title_log_out">Log out</string>
     <string name="title_help_center">Help center</string>
+
+    <string name="title_button_checkout">Check out</string>
+    <string name="title_checkout_total">TOTAL</string>
+
+    <string name="title_main_page_necklaces">Necklaces</string>
+    <string name="title_main_page_earrings">Earrings</string>
+    <string name="title_main_page_rings">Rings</string>
+    <string name="title_main_page_body_piercing">Body Piercing</string>
+    <string name="title_main_page_piercing_placements">Piercing Placements</string>
+    <string name="title_main_page_latest_collection">Latest Collection</string>">
+    <string name="title_main_page_product_categories">Product Categories</string>
+
+    <string name="title_earrings">Earrings</string>
+
 
 
 </resources>

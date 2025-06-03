@@ -33,7 +33,7 @@
 
         <!-- Title-->
         <TextView
-            android:id="@+id/titleDetailNews"
+            android:id="@+id/txtDetailNewsTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingTop="8dp"
@@ -43,14 +43,13 @@
             android:textStyle="bold" />
 
         <ImageView
-            android:id="@+id/imgNews"
+            android:id="@+id/imgDetailNews"
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:scaleType="centerCrop"
-            android:contentDescription="News image" />
+            android:scaleType="centerCrop" />
 
         <TextView
-            android:id="@+id/txtdescriptionNews"
+            android:id="@+id/txtDescriptionDetailNews"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingTop="8dp"
@@ -65,7 +64,7 @@
 
         <!-- Ngày đăng dưới cùng -->
         <TextView
-            android:id="@+id/txtDateNews"
+            android:id="@+id/txtDateDetailNews"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingTop="4dp"

@@ -13,15 +13,15 @@ import java.util.List;
 
 public class NewsActivity extends AppCompatActivity {
 
-    private RecyclerView rvNews;
+    private RecyclerView recyclerViewNews;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_news);
 
-        rvNews = findViewById(R.id.rvNews);
-        rvNews.setLayoutManager(new LinearLayoutManager(this));
+        recyclerViewNews = findViewById(R.id.recyclerViewNews);
+        recyclerViewNews.setLayoutManager(new LinearLayoutManager(this));
 
         List<NewsItem> dummyData = new ArrayList<>();
         dummyData.add(new NewsItem(
@@ -40,6 +40,6 @@ public class NewsActivity extends AppCompatActivity {
                 "August 22, 2025",
                 R.mipmap.img_sample));
         NewsAdapter adapter = new NewsAdapter(dummyData);
-        rvNews.setAdapter(adapter);
+        recyclerViewNews.setAdapter(adapter);
     }
 }

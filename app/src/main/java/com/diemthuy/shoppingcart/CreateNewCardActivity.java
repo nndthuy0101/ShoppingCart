@@ -30,7 +30,7 @@ public class CreateNewCardActivity extends AppCompatActivity {
 
 
         viewPagerCards = findViewById(R.id.viewPagerCards);
-        dotsIndicator = findViewById(R.id.dots_indicator);
+        dotsIndicator = findViewById(R.id.dotsIndicator);
 
 
         int[] imageResIds = {

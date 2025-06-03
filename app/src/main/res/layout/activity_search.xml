@@ -30,22 +30,22 @@
                 app:srcCompat="@mipmap/ic_back" />
 
             <androidx.appcompat.widget.SearchView
-                android:id="@+id/search_view"
+                android:id="@+id/searchView"
                 android:layout_width="0dp"
                 android:layout_marginLeft="10dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:queryHint="@string/hint_search"
+                android:queryHint="@string/title_search_hint"
                 android:iconifiedByDefault="false"
                 android:background="@drawable/bg_search" />
 
             <ImageView
-                android:id="@+id/btnFilterSearch"
+                android:id="@+id/btnSearchFilter"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:src="@mipmap/ic_filter"
                 android:layout_marginStart="8dp"
-                android:contentDescription="@string/btn_filter" />
+                android:contentDescription="@string/title_button_search_filter" />
         </LinearLayout>
 
         <!-- Searched Recently -->
@@ -59,7 +59,7 @@
             android:paddingBottom="8dp" />
 
         <com.diemthuy.shoppingcart.FlowLayout
-            android:id="@+id/recent_container"
+            android:id="@+id/searchRecentContainer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
@@ -67,14 +67,14 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/title_popular"
+            android:text="@string/title_search_popular"
             android:textSize="16sp"
             android:textStyle="bold"
             android:paddingTop="24dp"
             android:paddingBottom="8dp" />
 
         <com.diemthuy.shoppingcart.FlowLayout
-            android:id="@+id/popular_container"
+            android:id="@+id/searchPopularContainer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 

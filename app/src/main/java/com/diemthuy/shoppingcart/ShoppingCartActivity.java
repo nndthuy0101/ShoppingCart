@@ -21,17 +21,17 @@ public class ShoppingCartActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_shopping_cart); // điều chỉnh chỗ này cho [hù hợp với activity hiện tại thì mới chạy đc nha
+        setContentView(R.layout.activity_shopping_cart);
 
         cartData = new CartData();
         recyclerView = findViewById(R.id.recyclerView);
-        txtSubtotal = findViewById(R.id.summary_subtotal);
-        txtDelivery = findViewById(R.id.summary_delivery);
-        txtDiscount = findViewById(R.id.summary_discount);
-        txtTotal = findViewById(R.id.summary_total);
+        txtSubtotal = findViewById(R.id.txtShoppingCartSummarySubtotal);
+        txtDelivery = findViewById(R.id.txtShoppingCartSummaryDelivery);
+        txtDiscount = findViewById(R.id.txtShoppingCartSummaryDiscount);
+        txtTotal = findViewById(R.id.txtShoppingCartSummaryTotal);
 
-        EditText editPromo = findViewById(R.id.editPromo);
-        Button btnApply = findViewById(R.id.btnApply);
+        EditText editPromo = findViewById(R.id.edtShoppingCartPromo);
+        Button btnApply = findViewById(R.id.btnShoppingCartApply);
         Button btnCheckout = findViewById(R.id.btnCheckout);
 
         CartAdapter adapter = new CartAdapter(cartData.getItems(), this::updateSummary);

@@ -19,7 +19,7 @@ public class SearchActivity extends AppCompatActivity {
 
 
     private SearchView searchView;
-    private FlowLayout recentContainer, popularContainer;
+    private FlowLayout searchRecentContainer, searchPopularContainer;
 
 
     private final String PREF_NAME = "search_prefs";
@@ -38,9 +38,9 @@ public class SearchActivity extends AppCompatActivity {
         setContentView(R.layout.activity_search);
 
 
-        searchView = findViewById(R.id.search_view);
-        recentContainer = findViewById(R.id.recent_container);
-        popularContainer = findViewById(R.id.popular_container);
+        searchView = findViewById(R.id.searchView);
+        searchRecentContainer = findViewById(R.id.searchRecentContainer);
+        searchPopularContainer = findViewById(R.id.searchPopularContainer);
 
 
         prefs = getSharedPreferences(PREF_NAME, MODE_PRIVATE);
@@ -84,10 +84,10 @@ public class SearchActivity extends AppCompatActivity {
 
 
     private void updateUI() {
-        recentContainer.removeAllViews();
+        searchRecentContainer.removeAllViews();
         for (String keyword : recentList) {
             TextView chip = createChip(keyword);
-            recentContainer.addView(chip);
+            searchRecentContainer.addView(chip);
         }
 
 
@@ -95,11 +95,11 @@ public class SearchActivity extends AppCompatActivity {
         sorted.sort((a, b) -> b.getValue() - a.getValue());
 
 
-        popularContainer.removeAllViews();
+        searchPopularContainer.removeAllViews();
         for (int i = 0; i < Math.min(10, sorted.size()); i++) {
             String keyword = sorted.get(i).getKey();
             TextView chip = createChip(keyword);
-            popularContainer.addView(chip);
+            searchPopularContainer.addView(chip);
         }
     }
 

@@ -29,7 +29,7 @@ public class MainPageActivity extends AppCompatActivity {
         });
 
         // ✅ Khởi tạo RecyclerView cho Lastest Collection
-        RecyclerView recyclerView = findViewById(R.id.last_collection_recycler);
+        RecyclerView recyclerView = findViewById(R.id.recyclerViewLastCollection);
         recyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
         LastCollectionAdapter adapter = new LastCollectionAdapter(LastCollectionData.getItems());
         recyclerView.setAdapter(adapter);

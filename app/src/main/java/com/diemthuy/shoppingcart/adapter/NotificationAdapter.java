@@ -45,31 +45,31 @@ public class NotificationAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
     public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
         NotificationItem item = notificationList.get(position);
         if (holder instanceof HeaderViewHolder) {
-            ((HeaderViewHolder) holder).headerTextView.setText(item.getTitle());
+            ((HeaderViewHolder) holder).headerNotification.setText(item.getTitle());
         } else if (holder instanceof NotificationViewHolder) {
             ((NotificationViewHolder) holder).txtNotification.setText(item.getTitle());
-            ((NotificationViewHolder) holder).txtMessageNotification.setText(item.getMessage());
-            ((NotificationViewHolder) holder).txtTimeNotification.setText(item.getTime());
+            ((NotificationViewHolder) holder).txtNotificationMessage.setText(item.getMessage());
+            ((NotificationViewHolder) holder).txtNotificationTime.setText(item.getTime());
         }
     }
 
     static class HeaderViewHolder extends RecyclerView.ViewHolder {
-        TextView headerTextView;
+        TextView headerNotification;
 
         HeaderViewHolder(View itemView) {
             super(itemView);
-            headerTextView = itemView.findViewById(R.id.headerTextView);
+            headerNotification = itemView.findViewById(R.id.headerNotification);
         }
     }
 
     static class NotificationViewHolder extends RecyclerView.ViewHolder {
-        TextView txtNotification, txtMessageNotification, txtTimeNotification;
+        TextView txtNotification, txtNotificationMessage, txtNotificationTime;
 
         NotificationViewHolder(View itemView) {
             super(itemView);
             txtNotification = itemView.findViewById(R.id.txtNotification);
-            txtMessageNotification = itemView.findViewById(R.id.txtMessageNotification);
-            txtTimeNotification = itemView.findViewById(R.id.txtTimeNotification);
+            txtNotificationMessage = itemView.findViewById(R.id.txtNotificationMessage);
+            txtNotificationTime = itemView.findViewById(R.id.txtNotificationTime);
         }
     }
 }

@@ -10,7 +10,7 @@
 
     <!-- Close Icon -->
     <ImageView
-        android:id="@+id/ivClose"
+        android:id="@+id/imgClose"
         android:layout_width="24dp"
         android:layout_height="24dp"
         android:layout_marginEnd="8dp"
@@ -19,37 +19,38 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <!-- Title -->
-    <TextView
-        android:id="@+id/txtSuccessTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/title_reserved_successfully"
-        android:textAllCaps="true"
-        android:textStyle="bold"
-        android:textColor="#1E1E1E"
-        android:textSize="18sp"
-        android:letterSpacing="0.2"
-        android:gravity="center"
-        android:layout_marginTop="12dp"
-        app:layout_constraintTop_toBottomOf="@id/ivClose"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
 
     <!-- Check Icon -->
+    <TextView
+        android:id="@+id/txtReservedSuccessfullyTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:letterSpacing="0.2"
+        android:text="@string/title_reserved_successfully"
+        android:textAllCaps="true"
+        android:textColor="#1E1E1E"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.285"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgClose" />
+
     <ImageView
         android:id="@+id/imgCheck"
         android:layout_width="72dp"
         android:layout_height="72dp"
         android:layout_marginTop="20dp"
         android:src="@mipmap/ic_payment_success"
-        android:contentDescription="@string/success"
-        app:layout_constraintTop_toBottomOf="@id/txtSuccessTitle"
+        app:layout_constraintTop_toBottomOf="@id/txtReservedSuccessfullyTitle"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <!-- Message -->
     <TextView
-        android:id="@+id/txtSuccessMessage"
+        android:id="@+id/txtReservedSuccessfullyMessage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/title_reservation_updated"
@@ -67,7 +68,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:src="@mipmap/line_payment"
-        app:layout_constraintTop_toBottomOf="@id/txtSuccessMessage"
+        app:layout_constraintTop_toBottomOf="@id/txtReservedSuccessfullyMessage"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -90,7 +91,7 @@
             android:gravity="center">
 
             <TextView
-                android:id="@+id/txtAppointmentIdLabel"
+                android:id="@+id/txtReservedSuccessfullyIdLabel"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:text="@string/title_appointment_id_label"
@@ -116,7 +117,7 @@
             android:layout_marginTop="8dp">
 
             <TextView
-                android:id="@+id/txtAppointmentDateLabel"
+                android:id="@+id/txtReservedSuccessfullyDateLabel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/title_appointment_date_label"
@@ -142,7 +143,7 @@
             android:layout_marginTop="8dp">
 
             <TextView
-                android:id="@+id/txtAppointmentTimeLabel"
+                android:id="@+id/txtReservedSuccessfullyTimeLabel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/title_appointment_time_label"
@@ -162,7 +163,7 @@
 
     <!-- Remind Me Button -->
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/btnRemindMe"
+        android:id="@+id/btnReservedSuccessfullyRemindMe"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"

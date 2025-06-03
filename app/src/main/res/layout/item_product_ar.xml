@@ -3,7 +3,7 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:gravity="center"
-    android:layout_marginHorizontal="8dp">
+    android:layout_marginHorizontal="2dp">
 
     <FrameLayout
         android:layout_width="60dp"
@@ -11,7 +11,7 @@
         android:background="@drawable/img_stroke">
 
         <ImageView
-            android:id="@+id/imgProduct"
+            android:id="@+id/imgProductAR"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="6dp"
@@ -19,7 +19,7 @@
     </FrameLayout>
 
     <TextView
-        android:id="@+id/txtTitle"
+        android:id="@+id/txtProductAR"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"

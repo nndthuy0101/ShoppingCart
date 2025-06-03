@@ -1,5 +1,7 @@
 package com.diemthuy.shoppingcart.adapter;
 
+import android.content.Context;
+import android.util.DisplayMetrics;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,40 +17,58 @@ import com.diemthuy.shoppingcart.models.ProductItem;
 import java.util.List;
 
 public class ProductARAdapter extends RecyclerView.Adapter<ProductARAdapter.ViewHolder> {
-    private List<ProductItem> list;
 
-    public ProductARAdapter(List<ProductItem> list) {
-        this.list = list;
+    private final List<ProductItem> productList;
+    private final Context context;
+
+    public ProductARAdapter(List<ProductItem> productList, Context context) {
+        this.productList = productList;
+        this.context = context;
     }
 
     @NonNull
     @Override
-    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.item_product_ar, parent, false);
+    public ProductARAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        View view = LayoutInflater.from(context).inflate(R.layout.item_product_ar, parent, false);
         return new ViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        ProductItem item = list.get(position);
-        holder.title.setText(item.title);
-        holder.image.setImageResource(item.imageRes);
+    public void onBindViewHolder(@NonNull ProductARAdapter.ViewHolder holder, int position) {
+        ProductItem product = productList.get(position);
+
+        // Gán hình và tên
+        holder.txtProductAR.setText(product.title);
+        holder.imgProductAR.setImageResource(product.imageRes);
+
+        // Tính toán độ rộng item nếu sản phẩm <= 4
+        int totalItem = getItemCount();
+        ViewGroup.LayoutParams layoutParams = holder.itemView.getLayoutParams();
+
+        if (totalItem > 0 && totalItem <= 4) {
+            DisplayMetrics displayMetrics = context.getResources().getDisplayMetrics();
+            int screenWidth = displayMetrics.widthPixels;
+            layoutParams.width = screenWidth / totalItem;
+        } else {
+            layoutParams.width = ViewGroup.LayoutParams.WRAP_CONTENT;
+        }
+
+        holder.itemView.setLayoutParams(layoutParams);
     }
 
     @Override
     public int getItemCount() {
-        return list.size();
+        return productList.size();
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
-        ImageView image;
-        TextView title;
+        ImageView imgProductAR;
+        TextView txtProductAR;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            image = itemView.findViewById(R.id.imgProduct);
-            title = itemView.findViewById(R.id.txtTitle);
+            imgProductAR = itemView.findViewById(R.id.imgProductAR);
+            txtProductAR = itemView.findViewById(R.id.txtProductAR);
         }
     }
 }
